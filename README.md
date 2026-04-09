@@ -1,1 +1,2 @@
-# eye-Energy-Optimisation-HA-Solarman
+DEO: Deye Energy Optimisation for Home Assistant
+DEO (Deye Energy Optimisation) — це комплексне рішення для розумного керування зарядом акумуляторів в інверторах Deye (або їх аналогах) через Home Assistant. Система аналізує прогноз сонячної генерації, історичні дані споживання та погодні умови, щоб забезпечити оптимальний рівень заряду на ніч.
