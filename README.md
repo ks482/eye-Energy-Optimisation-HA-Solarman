@@ -24,9 +24,18 @@
     -  Коефіцієнт недовіри до прогнозу (наприклад, 10% — це означає, що ми закладаємо, що сонця буде на 10% менше, ніж кажуть синоптики) - input_number.deo_forecast_buffer_percent
     -  Пороги вітру і дощу, при яких автоматично вмикається режим "Шторм" - input_number.deo_storm_wind_threshold / rain_threshold
     -  Налаштування input_boolean.deo_user_prog_2_chg_normal - input_boolean.deo_user_prog_5_chg_normal; input_number.deo_user_prog_2_soc_normal - input_number.deo_user_prog_6_soc_normal - режими зарядки та рівні SOC для денних програм, які система відновить після завершення режим "Шторм"
-      
+
+#### Штатний режим
 
 <img width="1387" height="870" alt="image" src="https://github.com/user-attachments/assets/2a30f16a-23e5-40f3-b3f8-45bbeede346b" />
+
+<img width="643" height="794" alt="image" src="https://github.com/user-attachments/assets/8498e526-c2b3-4c52-9f74-9c61d85b3fcb" />
+
+#### Режим "Шторм"
+
+<img width="643" height="312" alt="image" src="https://github.com/user-attachments/assets/383cc27d-a711-4482-af7a-836a3ef7002d" />
+
+<img width="643" height="794" alt="image" src="https://github.com/user-attachments/assets/b5a8c9d2-62ac-4bdc-9978-10b0492bdbae" />
 
 ----------
 
@@ -108,9 +117,6 @@ $$calculated\_soc = Reserve + \left( \frac{MeanConsumption - (SolarForecast \tim
 -  **Назва інвертора в інтеграції HA-Solarman:** Deye12.
 -  **Час початку нічного тарифу:** дорівнює часу time.deye12_program_6_time (23:00).
 -  **Час закінчення нічного тарифу:** дорівнює часу time.deye12_program_2_time (07:00), time.deye12_program_1_time встановлений з 00:00 до 07:00
-
-<img width="643" height="777" alt="image" src="https://github.com/user-attachments/assets/c1dffdff-8f55-4cb8-9c1c-5442b3cee4f8" />
-
 
 ----------
 
