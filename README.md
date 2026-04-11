@@ -17,13 +17,13 @@
 -   **Гнучке відновлення:** Після завершення негоди система повертає інвертор до ваших персональних налаштувань для кожної часової програми (сутності number.deye12_program_X_soc і select.deye12_program_X_charging).
   
 -   **Налаштування через дашборд:**
-    -  Ручне увімкнення режиму шторму (зарядити на 100% негайно і тримати заряд до вимкнення режиму) - input_boolean.deo_force_storm_mode
-    -  Повна ємність вашої збірки АКБ у кВт⋅год (потрібно для переведення кВт⋅год дефіциту у відсотки SOC) - input_number.deo_battery_capacity
-    -  Ваш «комфортний мінімум» на ніч. Нижче цього значення автоматика ніколи не опустить цільовий заряд, навіть якщо прогноз сонця ідеальний - input_number.deo_min_soc
-    -  «Незнижуваний залишок» (Floor). Це значення, нижче якого ви взагалі не хочете розряджати батарею (наприклад, 15-20%) - input_number.deo_battery_reserve_soc
-    -  Коефіцієнт недовіри до прогнозу (наприклад, 10% — це означає, що ми закладаємо, що сонця буде на 10% менше, ніж кажуть синоптики) - input_number.deo_forecast_buffer_percent
-    -  Пороги вітру і дощу, при яких автоматично вмикається режим "Шторм" - input_number.deo_storm_wind_threshold / rain_threshold
-    -  Налаштування input_boolean.deo_user_prog_2_chg_normal - input_boolean.deo_user_prog_5_chg_normal; input_number.deo_user_prog_2_soc_normal - input_number.deo_user_prog_6_soc_normal - режими зарядки та рівні SOC для денних програм, які система відновить після завершення режим "Шторм"
+    -  Ручне увімкнення режиму шторму (зарядити на 100% негайно і тримати заряд до вимкнення режиму) — input_boolean.deo_force_storm_mode
+    -  Повна ємність вашої збірки АКБ у кВт⋅год (потрібно для переведення кВт⋅год дефіциту у відсотки SOC) — input_number.deo_battery_capacity
+    -  Ваш «комфортний мінімум» на ніч. Нижче цього значення автоматика ніколи не опустить цільовий заряд, навіть якщо прогноз сонця ідеальний — input_number.deo_min_soc
+    -  Нижня межа заряду акумулятора (наприклад, 15-20%) — input_number.deo_battery_reserve_soc
+    -  Коефіцієнт недовіри до прогнозу (наприклад, 10% — це означає, що ми закладаємо, що сонця буде на 10% менше, ніж кажуть синоптики) — input_number.deo_forecast_buffer_percent
+    -  Пороги вітру і дощу, при яких автоматично вмикається режим "Шторм" — input_number.deo_storm_wind_threshold / rain_threshold
+    -  Налаштування input_boolean.deo_user_prog_2_chg_normal — input_boolean.deo_user_prog_5_chg_normal; input_number.deo_user_prog_2_soc_normal - input_number.deo_user_prog_6_soc_normal — режими зарядки та рівні SOC для денних програм, які система відновить після завершення режим "Шторм"
 
 #### Штатний режим
 
