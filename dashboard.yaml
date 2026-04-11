@@ -68,8 +68,8 @@ views:
           - type: vertical-stack
             cards:
               - type: custom:mushroom-title-card
-                title: Налаштування Time of Use
-                subtitle: Рівні розряду та режими зарядки для кожної програми окремо
+                title: Налаштування SOC та Grid Charge
+                subtitle: Типові налаштування після закінчення режиму "Шторм"
               - type: grid
                 columns: 2
                 square: false
@@ -117,19 +117,24 @@ views:
             cards:
               - type: custom:mushroom-title-card
                 title: Системні параметри
-                subtitle: Пороги шторму та ємність
               - type: custom:mushroom-template-card
                 primary: >-
                   Цільовий заряд: {{ states('sensor.deo_required_soc_percent')
                   }}%
                 secondary: >-
-                  Дефіцит: {{ states('sensor.deo_deficit_kwh') }} kWh |
-                  Прогноз: {{ states('sensor.energy_production_tomorrow') }} kWh
+                  Дефіцит: {{ states('sensor.deo_deficit_kwh') }} kWh | Прогноз:
+                  {{ states('sensor.energy_production_tomorrow') }} kWh
                 icon: mdi:battery-charging-100
                 icon_color: blue
               - type: custom:mushroom-number-card
+                entity: input_number.deo_forecast_buffer_percent
+                name: Коефіцієнт недовіри до прогнозу сонця (%)
+                icon_color: primary
+                display_mode: slider
+                icon: mdi:sun-angle-outline
+              - type: custom:mushroom-number-card
                 entity: input_number.deo_battery_reserve_soc
-                name: Резерв (Floor) %
+                name: Нижня межа рівня заряду акумулятора (%)
                 icon_color: red
                 display_mode: slider
               - type: grid
