@@ -129,7 +129,7 @@
 | `input_number.deo_battery_capacity` | Повна ємність вашої АКБ (кВт⋅год) |
 | `input_number.deo_min_soc` | Мінімумальне значення заряду акумулятора на ніч (встановлюється вручну) |
 | `input_number.deo_battery_reserve_soc` | Нижня межа рівня заряду акумулятора |
-| `input_boolean.deo_force_storm_mode` | Перемикач для примусової активації штормового режиму |
+| `input_boolean.deo_force_storm_mode` | Перемикач для примусової активації режиму "Шторм" |
 
 
 ## 📦 Встановлення
